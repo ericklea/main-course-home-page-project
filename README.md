@@ -14,8 +14,12 @@ This image displays the page on landing
 
 This image displays the page with info entered
 
-![Image of the page displaying api functions]()
+![Image of the page displaying api functions](./images/Project1_pop.png)
 
 ## Sources
 
-Forums such as stack overflow were used for inspiration on select code
+Youtube, TA's, and forums such as stack overflow were used for inspiration on select code
+
+## Link to application
+
+https://ericklea.github.io/main-course-home-page-project/
