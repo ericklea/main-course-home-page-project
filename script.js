@@ -29,8 +29,7 @@ function getApi(url) {
         .then(function (data) {
             stockList = data.results;
             localStorage.setItem("Stock List", JSON.stringify(stockList));
-        })
-};
+        })};
 
 getApi(requestURL);
 
@@ -77,28 +76,33 @@ clearBtn.addEventListener("click", function() {
     historyArray = [];
     localStorage.setItem("Search History", JSON.stringify(historyArray));
     renderHistory();
-})
+});
 
 function getHistory() {
     var storedHistory = JSON.parse(localStorage.getItem("Search History"));
     if(storedHistory !== null) {
         historyArray = storedHistory;
-    }
-};
+    }};
 
 function renderHistory() {
     getHistory();
     historyList.innerHTML = "";
     for (var i = 0; i < historyArray.length; i++){
-        var histLi = document.createElement("li");
-        histLi.textContent = historyArray[i];
-        historyList.appendChild(histLi);
+        var histBtn = document.createElement("button");
+        histBtn.textContent = historyArray[i];
+        historyList.appendChild(histBtn);
+    }};
+
+historyList.addEventListener("click", function(event) {
+    var element = event.target;
+    if (element.matches("button") === true) {
+        newFilterApi(element.textContent);
     }
-};
+});
 
 // TODO":
-// most recent buisness day
 // Make the searches clickable
+//   Check out the todos list, namely clear button
 
 // Process:
 // fetch the api and set an array equal to the results.
