@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-grey-light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +13,11 @@
         <section class="hero is-info is-small">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title has-text-centered">
+                    <h1 class="title has-text-centered is-size-1">
                         Welcome to The Main Course!
                     </h1>
-                    <h2 class="subtitle has-text-centered" id="welcomename">
-                        Catered to you!7
+                    <h2 class="subtitle has-text-centered is-size-2">
+                        Catered to you!
                     </h2>  
                 </div>
             </div> 
@@ -27,25 +27,26 @@
         <section class="section">
            <div class="container"> 
                 <div class="columns">
-                    <div class="column notification is-success is-6 m-0">
-                        <h2 class="has-text-centered">
+                    <div class="box has-text-centered column notification is-success is-6 m-0">
+                        <h2 class="is-size-3">
                             Stocks
                         </h2>
-                        <ul id="stockL">
-                            
-                        </ul>
-                        <ul id="stockHistL">
 
-                        </ul>
-                        <input type="text" placeholder="Ticker Symbol" id="usrinpt">
-                        <button id="searchBtn">Search</button>
-                        <button id="clearBtn">Clear History</button>
+                        <div id="stockL"></div>
+                        <div id="stockHistL"></div>
+                        <input type="text" aria-label="search" placeholder="Ticker Symbol" id="usrinpt"></input>
+                        <button class ="button is-success is-light is-small is-outlined is-rounded" id="searchBtn">Search</button>
+                        <button class ="button is-success is-light is-small is-outlined is-rounded" id="clearBtn">Clear History</button>
+                 
                     </div>
-                    <div class="column notification is-success is-6">
-                       <h2 class="has-text-centered">
+                    <div class="box has-text-centered column notification is-success is-6">
+                       <h2 class="is-size-3">
                             News
-                       </h2>
-                       <div id="newsL"></div>   
+                       </h2> 
+                       <div id="newsL"></div>
+                       <button class="button is-success is-light is-small is-outlined is-rounded" id="top">Top News</button>
+                       <button class="button is-success is-light is-small is-outlined is-rounded" id="all">All News</button>
+
                     </div>
                 </div>
             </div>
