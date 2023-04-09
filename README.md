@@ -18,7 +18,7 @@ This image displays the page with info entered
 
 ## Sources
 
-Youtube, TA's, and forums such as stack overflow were used for inspiration on select code
+Youtube, TA Benjamin Bushman, and forums such as stack overflow were used for inspiration on select code
 
 ## Link to application
 
