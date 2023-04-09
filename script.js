@@ -3,7 +3,7 @@ var searchBtn = document.getElementById("searchBtn");
 var clearBtn = document.getElementById("clearBtn");
 var inputEl = document.getElementById("usrinpt");
 var historyList = document.getElementById("stockHistL");
-var requestURL = 'https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/2023-04-07?adjusted=true&apiKey=1cw4p56EVUjieQaTpTQxhiapI8vsGjCF';
+var requestURL = 'https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/2023-01-09?adjusted=true&apiKey=1cw4p56EVUjieQaTpTQxhiapI8vsGjCF';
 var stockList;
 var result;
 var stocks = [];
@@ -103,17 +103,6 @@ historyList.addEventListener("click", function(event) {
 // add a search bar and button to search a specific stock by its ticker symbol
 // add a history array that interacts with local storage
 // make the history buttons clickable to re-search them
-
-if('geolocation' in navigator){
-   navigator.geolocation.getCurrentPosition(setPosition);
-}
-
-function setPosition(position){
-    let latitude = position.coords.coords.latitude;
-    let longitude = position.coords.longitude;
-
-    getWeather(latitude, longitude);
-}
 
 // variables
 const topBtn = document.querySelector('#top');
